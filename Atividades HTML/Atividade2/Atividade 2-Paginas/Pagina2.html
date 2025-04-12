@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com Variações</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 40px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        .striped tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .borderless td, .borderless th {
+            border: none;
+        }
+
+        .colored th {
+            background-color: #007BFF;
+        }
+
+        .center {
+            margin: auto;
+        }
+
+        .title {
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabelas com Variações</h1>
+
+    <!-- Tabela 1 - Padrão -->
+    <div class="title">Tabela 1 - Padrão</div>
+    <table class="center">
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+        </tr>
+        <tr>
+            <td>Caneta</td>
+            <td>R$2,50</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Lápis</td>
+            <td>R$1,50</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <!-- Tabela 2 - Listrada -->
+    <div class="title">Tabela 2 - Listrada</div>
+    <table class="striped center">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>30</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+    </table>
+
+    <!-- Tabela 3 - Sem borda -->
+    <div class="title">Tabela 3 - Sem Borda</div>
+    <table class="borderless center">
+        <tr>
+            <th>Curso</th>
+            <th>Duração</th>
+            <th>Turno</th>
+        </tr>
+        <tr>
+            <td>Engenharia</td>
+            <td>5 anos</td>
+            <td>Matutino</td>
+        </tr>
+        <tr>
+            <td>Direito</td>
+            <td>5 anos</td>
+            <td>Noturno</td>
+        </tr>
+    </table>
+
+    <!-- Tabela 4 - Colorida -->
+    <div class="title">Tabela 4 - Cabeçalho Colorido</div>
+    <table class="colored center">
+        <tr>
+            <th>Time</th>
+            <th>Pontos</th>
+            <th>Posição</th>
+        </tr>
+        <tr>
+            <td>Flamengo</td>
+            <td>68</td>
+            <td>1º</td>
+        </tr>
+        <tr>
+            <td>Palmeiras</td>
+            <td>65</td>
+            <td>2º</td>
+        </tr>
+    </table>
+
+    <!-- Tabela 5 - Mista -->
+    <div class="title">Tabela 5 - Mista</div>
+    <table class="striped colored center">
+        <tr>
+            <th>Aluno</th>
+            <th>Nota</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>8.5</td>
+            <td>Aprovado</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>6.0</td>
+            <td>Aprovado</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>4.0</td>
+            <td>Reprovado</td>
+        </tr>
+    </table>
+<br>
+<br>
+    <a href="../Atividade 2/Pagina1.html">Página 1</a>
+    <a href="../Atividade 2/Pagina3.html">Página 3</a>
+    <a href="../Index.html">Página Index</a>
+
+</body>
+</html>

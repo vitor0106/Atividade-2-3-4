@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário com 15 Opções</title>
+
+  <link rel="stylesheet" type="text/css" href="../Style.css"/>
+
+</head>
+<body id=#bodyform>
+
+  <h1 style="text-align:center;">Formulário Completo</h1>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha">
+
+      <label for="nascimento">Data de nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento">
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone">
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferências</legend>
+
+      <label for="cor">Escolha sua cor favorita:</label>
+      <input type="color" id="cor" name="cor">
+
+      <label for="arquivo">Envie um arquivo:</label>
+      <input type="file" id="arquivo" name="arquivo">
+
+      <label for="range">Volume (0 a 100):</label>
+      <input type="range" id="range" name="range" min="0" max="100">
+
+      <label for="numero">Digite um número:</label>
+      <input type="number" id="numero" name="numero">
+
+      <label for="hora">Hora preferida:</label>
+      <input type="time" id="hora" name="hora">
+    </fieldset>
+
+    <fieldset>
+      <legend>Opções e Seleções</legend>
+
+      <label for="genero">Gênero:</label>
+      <select id="genero" name="genero">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <label>Você possui experiência? <span style="color:red">*</span></label>
+      <div class="inline-group">
+        <label><input type="radio" name="experiencia" value="sim" required> Sim</label>
+        <label><input type="radio" name="experiencia" value="nao"> Não</label>
+      </div>
+
+      <label>Quais linguagens você conhece? <span style="color:red">*</span></label>
+      <div class="inline-group">
+        <label><input type="checkbox" name="linguagens" value="html" required> HTML</label>
+        <label><input type="checkbox" name="linguagens" value="css"> CSS</label>
+        <label><input type="checkbox" name="linguagens" value="js"> JavaScript</label>
+      </div>
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado">
+        <option value="sp">SP</option>
+        <option value="rj">RJ</option>
+        <option value="mg">MG</option>
+      </select>
+
+      <label for="mensagem">Deixe sua mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset" style="background-color: red">Limpar</button>
+  </form>
+
+</body>
+</html>
