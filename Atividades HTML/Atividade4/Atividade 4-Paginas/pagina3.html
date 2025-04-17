@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Multimídia</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+        text-align: center;
+        background-color: darkred; /* nova cor de fundo */
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .gallery img {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #00838f;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    a:hover {
+        background-color: #006064;
+    }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Projeto Multimídia</h1>
+
+    <p>
+      Confira abaixo um vídeo e um áudio integrados à página! Eles podem ser usados para enriquecer a experiência dos usuários com conteúdo visual e sonoro.
+    </p>
+
+    <!-- Vídeo -->
+    <div class="media video">
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/7FFGIqNHV1g?si=ISOhqEuFbSW9vmpt" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Áudio -->
+    <div class="media audio">
+      <audio controls>
+        <source src="../audio/i-am-steve.mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+    <!-- Navegação -->
+    <div class="links">
+      <a href="../Index.html">Início</a>
+      <a href="../Atividade 4-Paginas/pagina2.html">Página 2</a>
+      <a href="../Atividade 4-Paginas/pagina3.html">Página 3</a>
+      <a href="../Atividade 4-Paginas/Menu.html">Menu</a>
+    </div>
+  </div>
+
+</body>
+</html>
